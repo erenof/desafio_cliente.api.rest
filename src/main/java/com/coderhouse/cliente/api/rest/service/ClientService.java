@@ -21,7 +21,7 @@ public class ClientService {
     }
 
     // Method to get client age
-    public Object getClient(int id) throws Exception {
+    public Object getClientAge(int id) throws Exception {
         Optional<Client> client = clientRepository.findById(id);
 
         if(client.isEmpty()){

@@ -40,9 +40,9 @@ public class ClientController {
 
     // Get client
     @GetMapping(path = "{id}")
-    public ResponseEntity<Object> getClient(@PathVariable() int id) {
+    public ResponseEntity<Object> getClientAge(@PathVariable() int id) {
         try {
-            Object clientFound = clientService.getClient(id);
+            Object clientFound = clientService.getClientAge(id);
             return ResponseHandler.generateResponse(
                     "Client age retrieved",
                     HttpStatus.OK,
